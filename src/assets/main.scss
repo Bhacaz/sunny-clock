@@ -1,0 +1,19 @@
+@import "bulma/bulma";
+
+body { min-height: 100vh; }
+
+.is-fullheight {
+    min-height: 100vh;
+}
+
+.big-icon {
+    height: 15rem;
+    width: 15rem;
+    font-size: 15rem;
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .columns.is-mobile {
+        display: block !important;
+    }
+}
