@@ -37,10 +37,9 @@ export default {
       console.log(`Sleeping in ${hoursUntilSleep} hours and ${minutesUntilSleep} minutes`);
       setTimeout(() => {
         this.$refs.moonSection.classList.add('moon-transition-to-sun');
-        this.$refs.moonIcon.classList.add('is-hidden');
         // Wait for transition to finish
         setTimeout(() => {
-          this.$router.push('/');
+          this.goToSun()
         }, 9000);
       }, difference);
     },
