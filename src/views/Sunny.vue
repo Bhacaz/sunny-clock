@@ -64,7 +64,7 @@ export default {
   </section>
 </template>
 
-<style>
+<style scoped>
 .sun-section {
   background-color: #ffffcc;
 }
